@@ -5,9 +5,9 @@ Docker image for OpenVPN server.
 The NET_ADMIN capability is required for running the image `--cap-add NET_ADMIN`.
 
 For IPv6, add the following sysctls with the `--sysctl` flag
-net.ipv6.conf.all.disable_ipv6=0
-net.ipv6.conf.default.forwarding=1
-net.ipv6.conf.all.forwarding=1
+* net.ipv6.conf.all.disable_ipv6=0
+* net.ipv6.conf.default.forwarding=1
+* net.ipv6.conf.all.forwarding=1
 
 ## Get client certificate
 Export client certificate by running
